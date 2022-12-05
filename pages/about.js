@@ -30,10 +30,50 @@ export default function About() {
           certification from Google. I recently obtained my AWS Certified Cloud
           Practitioner certification).
         </p>
+
+        <p>
+          Experienced and passionate educator with more than 16 years of
+          experience in the Teaching and Curriculum Development industry.
+          Skilled in English as a Second Language (ESL), Curriculum Design,
+          Professional Development Facilitation for teachers, Microsoft Office
+          products, Educational Leadership methods, Lesson planning techniques
+          and Project management methodologies. Strong education professional
+          with a Bachelor's degree focused in Mathematics and Physical Sciences.
+        </p>
+
         <p> I love to read (Sci-Fi).</p>
+      </div>
+      <div className="experience">
+        <h1>Experience</h1>
+        <div className="experience-item">
+          <h2>Web Developer</h2>
+          <h3>Freelance</h3>
+          <p>
+            I have been working as a freelance web developer for the past 3
+            months and have worked on a variety of projects. I have experience
+            with building websites from scratch, as well as working with
+            existing codebases. I have experience with both front-end and
+            back-end development.
+          </p>
+        </div>
+        <div className="experience-item">
+          <h2>Mathematics Teacher</h2>
+          <h3>Olympic Primary School</h3>
+          <p>
+            I have been teaching Mathematics and other Learning Areas for the
+            past 16 years. I have experience with teaching Mathematics to
+            students from Grades 4 to 11.
+          </p>
+        </div>
       </div>
       <style jsx>{`
         .about {
+          max-width: 800px;
+          margin: 0 auto;
+          padding: 20px;
+        }
+
+        .experience {
           max-width: 800px;
           margin: 0 auto;
           padding: 20px;
