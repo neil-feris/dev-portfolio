@@ -26,6 +26,7 @@ export default function Projects() {
       description:
         "TODO list app with support for different users.\n\nFeatures: \nMulti Device support  \n\nTechnologies: \nMongoDB, ExpressJS, React, NodeJS, Material UI",
       image: "/img/tech/todo.png",
+      github: "https://github.com/neil-feris/dev-portfolio",
     },
   ];
 
