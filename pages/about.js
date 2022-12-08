@@ -38,7 +38,8 @@ export default function About() {
           Professional Development Facilitation for teachers, Microsoft Office
           products, Educational Leadership methods, Lesson planning techniques
           and Project management methodologies. Strong education professional
-          with a Bachelor's degree focused in Mathematics and Physical Sciences.
+          with a Bachelor&apos;s degree focused in Mathematics and Physical
+          Sciences.
         </p>
 
         <p> I love to read (Sci-Fi).</p>
