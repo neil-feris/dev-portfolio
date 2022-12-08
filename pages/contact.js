@@ -18,23 +18,41 @@ export default function Contact() {
         <ul>
           <li>
             <BsEnvelope /> :{" "}
-            <a href="mailto:neil.feris@gmail.com">neil.feris@gmail.com</a>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="mailto:neil.feris@gmail.com"
+            >
+              neil.feris@gmail.com
+            </a>
           </li>
           <li>
             <BsGithub /> :{" "}
-            <a href="https://github.com/neil-feris">
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://github.com/neil-feris"
+            >
               https://github.com/neil-feris
             </a>
           </li>
           <li>
             <BsLinkedin /> :{" "}
-            <a href="https://www.linkedin.com/in/neil-feris-8496745/">
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.linkedin.com/in/neil-feris-8496745/"
+            >
               LinkedIn
             </a>
           </li>
           <li>
             <BsTwitter /> :{" "}
-            <a href="https://twitter.com/neil_feris">
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://twitter.com/neil_feris"
+            >
               https://twitter.com/neil_feris
             </a>
           </li>
