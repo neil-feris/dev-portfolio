@@ -5,6 +5,10 @@ import Layout from "../components/Layout";
 
 import Script from "next/script";
 
+import { useRouter } from "next/router";
+import { useEffect } from "react";
+import * as gtag from "../lib/gtag";
+
 const lato = Lato({
   weight: ["300", "400", "700"],
   subsets: ["latin"],
@@ -13,6 +17,18 @@ const lato = Lato({
 import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }) {
+  const router = useRouter();
+
+  useEffect(() => {
+    const handleRouteChange = (url) => {
+      gtag.pageview(url);
+    };
+    router.events.on("routeChangeComplete", handleRouteChange);
+    return () => {
+      router.events.off("routeChangeComplete", handleRouteChange);
+    };
+  }, [router.events]);
+
   return (
     <>
       <Script
@@ -25,7 +41,9 @@ function MyApp({ Component, pageProps }) {
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
 
-        gtag('config', 'G-NZ0853WTD9');
+        gtag('config', 'G-NZ0853WTD9', {
+          page_path: window.location.pathname,
+        });
         `}
       </Script>
       <Layout>
