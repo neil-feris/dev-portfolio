@@ -15,7 +15,6 @@ const lato = Lato({
   subsets: ["latin"],
 });
 
-
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
 
@@ -34,7 +33,7 @@ function MyApp({ Component, pageProps }) {
       <Script
         src="https://www.googletagmanager.com/gtag/js?id=G-NZ0853WTD9"
         strategy="afterInteractive"
-      />
+      ></Script>
       <Script id="google-analytics" strategy="afterInteractive">
         {`
         window.dataLayer = window.dataLayer || [];
