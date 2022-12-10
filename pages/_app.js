@@ -1,3 +1,4 @@
+import "../styles/globals.css";
 //import google font Lato
 import { Lato } from "@next/font/google";
 
@@ -14,7 +15,6 @@ const lato = Lato({
   subsets: ["latin"],
 });
 
-import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
@@ -30,7 +30,7 @@ function MyApp({ Component, pageProps }) {
   }, [router.events]);
 
   return (
-    <>
+    <main className={lato.className}>
       <Script
         src="https://www.googletagmanager.com/gtag/js?id=G-NZ0853WTD9"
         strategy="afterInteractive"
@@ -47,11 +47,9 @@ function MyApp({ Component, pageProps }) {
         `}
       </Script>
       <Layout>
-        <main className={lato.className}>
-          <Component {...pageProps} />
-        </main>
+        <Component {...pageProps} />
       </Layout>
-    </>
+    </main>
   );
 }
 
