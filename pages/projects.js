@@ -31,7 +31,7 @@ export default function Projects() {
   ];
 
   return (
-    <Layout>
+    <>
       <div>
         <h1>My Projects</h1>
         <section className="portfolio-block">
@@ -146,6 +146,6 @@ export default function Projects() {
           justify-content: center;
         }
       `}</style>
-    </Layout>
+    </>
   );
 }

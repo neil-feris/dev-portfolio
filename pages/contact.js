@@ -11,7 +11,7 @@ import {
 
 export default function Contact() {
   return (
-    <Layout>
+    <>
       <div className="contact">
         <h1>Contact Me</h1>
         <p>You can contact me through the following channels:</p>
@@ -93,6 +93,6 @@ export default function Contact() {
           text-decoration: underline;
         }
       `}</style>
-    </Layout>
+    </>
   );
 }

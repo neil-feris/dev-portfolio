@@ -4,7 +4,7 @@ import Layout from "../components/Layout";
 
 export default function About() {
   return (
-    <Layout>
+    <>
       <div className="about">
         <h1>About Me</h1>
         <p>
@@ -80,6 +80,6 @@ export default function About() {
           padding: 20px;
         }
       `}</style>
-    </Layout>
+    </>
   );
 }

@@ -7,7 +7,7 @@ import { AiOutlineSetting } from "react-icons/ai";
 
 export default function Home() {
   return (
-    <Layout>
+    <>
       <div className="page">
         <section className="portfolio-block block-intro">
           <div className="container">
@@ -403,6 +403,6 @@ export default function Home() {
           background-color: #fff;
         }
       `}</style>
-    </Layout>
+    </>
   );
 }
