@@ -4,6 +4,8 @@ import styles from "../styles/Home.module.css";
 import Header from "./Header";
 import Footer from "./Footer";
 
+import Script from "next/script";
+
 export default function Layout({ children }) {
   return (
     <div className={styles.container}>
@@ -14,6 +16,19 @@ export default function Layout({ children }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/apple-touch-icon.png" />
       </Head>
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-NZ0853WTD9"
+        strategy="afterInteractive"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-NZ0853WTD9');
+        `}
+      </Script>
       <Header />
       <main className={styles.main}>{children}</main>
       <Footer />
