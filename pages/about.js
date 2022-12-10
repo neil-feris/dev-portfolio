@@ -1,7 +1,5 @@
 // about page
 
-import Layout from "../components/Layout";
-
 export default function About() {
   return (
     <>
@@ -25,10 +23,10 @@ export default function About() {
         </p>
         <p>
           My expertise lies within front-end web apps, and the main languages in
-          my tech stack are JavaScript, React, and of course HTML/CSS. I’m a
-          lifelong learner (currently preparing for Associate Android Developer
-          certification from Google. I recently obtained my AWS Certified Cloud
-          Practitioner certification).
+          my tech stack are JavaScript, React, and of course HTML/CSS. I&apos;m
+          a lifelong learner (currently preparing for Associate Android
+          Developer certification from Google. I recently obtained my AWS
+          Certified Cloud Practitioner certification).
         </p>
 
         <p>

@@ -1,5 +1,4 @@
 // contact page
-import Layout from "../components/Layout";
 
 import {
   BsLinkedin,

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import Layout from "../components/Layout";
+
 import { AiOutlineStar } from "react-icons/ai";
 import { AiOutlineBulb } from "react-icons/ai";
 import { AiOutlineSetting } from "react-icons/ai";
