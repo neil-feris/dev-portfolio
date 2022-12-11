@@ -59,6 +59,10 @@ export default function Contact() {
       </div>
       <style jsx>{`
         .contact {
+          min-height: 75vh;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
           margin: 0 auto;
           padding: 20px;
           max-width: 800px;
