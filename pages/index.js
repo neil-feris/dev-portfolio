@@ -114,7 +114,7 @@ export default function Home() {
           </div>
         </section>
       </div>
-      <section className="portfolio-block website gradient">
+      {/* <section className="portfolio-block website gradient">
         <div className="container">
           <div className="row">
             <div className="col2 text">
@@ -139,7 +139,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       <style jsx global>{`
         .avatar {
           background-image: url("/img/profile.jpg");
@@ -253,25 +253,33 @@ export default function Home() {
 
         .img-fluid {
           max-width: 100%;
+          border: 1px solid #ddd;
+          margin: 0;
         }
 
         .col {
+          display: flex;
           flex: 0 0 auto;
-          width: 33.33333333%;
+          align-items: center;
+          // min-width: 200px;
+          max-width: 360px;
         }
 
         .col2 {
           flex: 0 0 auto;
-          width: 50%;
+          min-width: 400px;
         }
 
         .row {
           display: flex;
-          max-width: 1200px;
           flex-wrap: wrap;
+          justify-content: center;
+          max-width: 1200px;
         }
 
         .skills {
+          display: flex;
+          flex-wrap: wrap;
           border-bottom: 1px solid #ddd;
         }
 

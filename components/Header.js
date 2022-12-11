@@ -18,10 +18,12 @@ export default function Header() {
       </nav>
       <style jsx global>{`
         nav {
-          width: 100%;
-          max-width: 100vw;
-          height: 60px;
           display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          width: 100%;
+          min-width: 100vw;
+          height: 60px;
           padding: 20px 0 0;
           justify-content: space-between;
           background: linear-gradient(120deg, #46cec5, #0ea0ff);
@@ -29,11 +31,28 @@ export default function Header() {
         }
 
         .nav-home {
+          display: flex;
           font-size: 2rem;
           font-weight: 700;
           padding: 0 20px;
           text-decoration: none;
           color: #fff;
+        }
+
+        @media (max-width: 480px) {
+          .nav-home {
+            font-size: 1.4rem;
+            padding: 0 10px;
+          }
+
+          .nav-links {
+            padding: 0 10px;
+          }
+
+          .nav-links a {
+            font-size: 1rem;
+            padding: 0 10px;
+          }
         }
 
         nav a {
@@ -50,6 +69,12 @@ export default function Header() {
           padding: 0 30px;
           text-decoration: none;
           color: #fff;
+        }
+
+        .nav-links {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
         }
       `}</style>
     </>

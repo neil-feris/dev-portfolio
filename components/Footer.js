@@ -61,11 +61,10 @@ export default function Footer() {
           flex-direction: column;
           justify-content: center;
           align-items: center;
-          margin: 0 auto;
-          width: 100%;
-          max-width: 100vw;
+          // margin: 0;
+          // width: 100%;
+          min-width: 100vw;
           height: 60px;
-          display: flex;
           padding: 20px 0 20px;
           justify-content: space-between;
           background: linear-gradient(120deg, #46cec5, #0ea0ff);
