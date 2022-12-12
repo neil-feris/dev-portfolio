@@ -253,7 +253,7 @@ export default function Home() {
 
         .img-fluid {
           max-width: 100%;
-          border: 1px solid #ddd;
+          // border: 1px solid #ddd;
           margin: 0;
         }
 
